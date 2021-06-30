@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>555 App</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+
+   <!-- Custom styles for this template -->
+   <link href="css/navbar-fixed-top.css" rel="stylesheet">
+   <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+   <!-- Fixed navbar -->
+   <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+         <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+               aria-expanded="false" aria-controls="navbar">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand">555 App</a>
+         </div>
+
+         <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+               <li class="active"><a href="">Home</a></li>
+               <li><a href="#notes">Notes</a></li>
+               <li><a href="#studies">Studies</a></li>
+               <li><a href="#expenses">Expenses</a></li>
+               <li><a href="#recipes">Recipes</a></li>
+               <li><a href="#about">About Us</a></li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+               <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                     aria-expanded="false"><span id="idSpan"> <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                     <li><a href="#profile">Profile</a></li>
+                     <li><a href="#logout">Logout</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+         <!--/.nav-collapse -->
+      </div>
+   </nav>
+   <br><br>
+   <div class="jumbotron" id="divApp">
+      <center>
+         <h1>555 APPLICATION</h1>
+      </center>
+   </div>
+
+
+   <div class="container">
+
+      <!-- divHome-->
+      <div id="divHome" style="overflow-x:auto;">
+         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+         <a href="#notes"><img src="../www/img/notes.png" width="20%"></a>
+         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+         <a href="#studies"><img src="../www/img/studies.png" width="20%"></a>
+         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+         <a href="#expenses"><img src="../www/img/expenses.png" width="20%"></a>
+         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+         <a href="#recipes"><img src="../www/img/recipe.png" width="20%"></a>
+      </div>
+      <br><br>
+
+      <iframe id="divSong" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+         src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/590359776&color=%2370bccc&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+
+
+      <!-- divRecipe-->
+      <div class="well" id="divRecipes" style="overflow-x:auto;">
+         <div class="row">
+            <div class="col-sm-12">
+               <p></p>
+               <table class="table table-condensed table-stripped table-hover">
+                  <thead>
+                     <tr>
+                        <th>Recipes</th>
+                        <th>Ingredients</th>
+                        <th>Steps</th>
+                        <th>Picture</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>Roti Jala Coklat</td>
+                        <td>
+                           - 3 cawan tepung gandum<br>
+                           - 2 biji telur<br>
+                           - 3 sudu besar serbuk koko<br>
+                           - 3 sudu besar gula pasir<br>
+                           - Sedikit garam ( sis guna garam bukit satu sudu teh )<br>
+                           - 3 sudu besar minyak jagung @ minyak zaitun<br>
+                           - 1/2 cawan susu cair<br>
+                           - 1 1/2 cawan air ( boleh tambah sekiranya adunan nampak pekat )<br>
+                        </td>
+                        <td>
+                           1. Masukkan ke semua bahan ke dalam blender dan blend hingga halus.<br>
+                           2. Adunan tak pekat dan tak cair sangat boleh sedia untuk menjala.<br>
+                           3. Tuangkan adunan ke dalam botol kaki tiga.<br>
+                           4. Guna kuali non stick dan start menjala sampai habis.<br>
+                        </td>
+                        <td>
+                           <img src="/img/rotijala.jpeg" width="180px" height="200px" />
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Air Bandung</td>
+                        <td>
+                           - Air<br>
+                           - Sirap<br>
+                           - Susu pekat<br>
+                           - Susu cair<br>
+                        </td>
+                        <td>
+                           1. Bancuhkan air<br>
+                           2. Letakkan sirap<br>
+                           3. Letakkan susu pekat<br>
+                           4. Letakkan susu cair<br>
+                           5. Kacau<br>
+                        </td>
+                        <td>
+                           <img src="/img/bandung.jpg" width="180px" height="200px" />
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Kek Coklat</td>
+                        <td>
+                           Bahan A (larutkan atas dapur)<br>
+                           - 1 cawan gula<br>
+                           - 1 cawan minyak masak<br>
+                           - 1 cawan susu cair<br>
+                           - 1/2 cawan susu pekat<br>
+                           <br>
+                           Bahan B (Ayak)<br>
+                           - 1 1/4 cawan tepung gandum<br>
+                           - 1 ts baking powder<br>
+                           - 1 ts soda bikarbonat<br>
+                           - 1 cawan serbuk koko<br>
+                           <br>
+                           Bahan C (Pukul sampai kembang)<br>
+                           - 4biji telur<br>
+                           - 1 ts esen vanilla<br>
+                        </td>
+                        <td>
+                           1. Buat bahan C dulu<br>
+                           2. Campurkan dengan bahan A<br>
+                           3. Last masukkan bahan B<br>
+                           <br>
+                           Kukus selama +- 30mins/hingga masak<br>
+                        </td>
+                        <td>
+                           <br><br><br>
+                           <img src="/img/kekcoklat.jpeg" width="180px" height="200px" />
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Paprik Ayam</td>
+                        <td>
+                           Bahan A<br>
+                           - 300 gram ayam (campuran bahagian isi dan tulang)<br>
+                           - 3 sudu besar minyak masak<br>
+                           - 1 sudu besar cili kisar<br>
+                           - 2 ulas bawang putih (diketuk)<br>
+                           - 1 cm halia (hiris nipis)<br>
+                           - 1 sudu besar kicap manis<br>
+                           - 1 sudu besar sos cili<br>
+                           - 1 sudu kecil pes tomyam<br>
+                           - 1 helai daun limau purut<br>
+                           - 1 batang serai (dititik)<br>
+                           - 5 biji cili api (dititik)<br>
+                           - 1/2 labu bawang besar (hiris kasar)<br>
+                           - sedikit air)<br>
+                           - sedikit sos ikan (optional)<br>
+                           - sayur (bunga kubis,kacang panjang dan capsicum hijau)<br>
+                        </td>
+                        <td>
+                           1. Panaskan minyak dalam kuali, tumis bawang putih, <br>
+                           halia dan cili kisar dan pes tom yam hingga naik bau.<br>
+                           2. Masukkan ayam dan kacau selama 2-3 atas api yang besar.<br>
+                           3. Masukkan bahan-bahan lain beserta air, <br>
+                           kacau hingga kuah menjadi pekat.<br>
+                           4. Angkat dan hidangkan bersama nasi putih yang panas.<br>
+                        </td>
+                        <td>
+                           <br><br><br>
+                           <img src="/img/paprikayam.jpeg" width="180px" height="200px" />
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Aiskrim Goreng</td>
+                        <td>
+                           - Roti gardenia<br>
+                           - 1 bekas aiskrim<br>
+                        </td>
+                        <td>
+                           Cara penyediaan : <br>
+                           1. Ambil sekeping roti dan tekan bahagian tengah roti dengan <br>
+                           sudu. Letakkan satu sudu aiskrim pada bahagian roti yang telah ditekan tadi.<br>
+                           2. Ambil sekeping roti yang baru dan letak diatas roti yang mempunyai<br>
+                           aiskrim tadi. Ambil cawan dan tekap diatas roti tersebut. Pastikan cawan<br>
+                           tersebut tidak tekap diatas aiskrim.<br>
+                           3. Pastikan roti tersebut ditekap dengan kuat agar aiskrim tidak keluar dari roti.<br>
+                           4. Keluarkan bahagian kulit roti yang berlebihan disekeliling cawan tersebut.<br>
+                           (ulang langkah 1 hingga langkah 4 sebanyak mana anda mahukan).<br>
+                           5. Bagi mengelakkan aiskrim cair, roti yang telah siap dibuat tadi lebih<br>
+                           baik diletakkan di dalam peti sejuk beku sementara menyiapkan roti asikrim yang lain.<br>
+                           6. apabila sudah cukup kuantiti yang dikehendaki, goreng roti tersebut di <br>
+                           dalam minyak yang betul-betul panas dalam masa beberapa saat sahaja bagi<br>
+                           mengelakkan roti aiskrim cair.<br>
+                           7. Aiskrim roti sudah sedia untuk dihidangkan. Lebih sedap makan<br>
+                           terus selepas digoreng.
+                        </td>
+                        <td>
+                           <br><br>
+                           <img src="/img/aiskrim.jpeg" width="180px" height="200px" />
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+      </div>
+
+      <div class="about1" id="divAbout" style="overflow-x:auto;">
+         <button type="button" class="collapsible">555 APPLICATION</button>
+         <div class="content">
+            <br>
+            <p>The humble notebook, Buku 555 has given a boost into the 21st century by turning it into an app.
+               Just like its paper counterpart, Buku 555 is a simple, no-frills app with just enough features to help
+               you
+               keep a record of important notes, data or memo. This app is divided into several sections such as notes,
+               studies, expenses and recipes. Each of these parts has a bit of its own twist.</p>
+         </div>
+         <br>
+         <button type="button" class="collapsible">NOTES</button>
+         <div class="content">
+            <br>
+            <p>
+               The first menu in the navigation bar is notes. In the navigation section of the note, the user can
+               save information such as passwords and usernames or the like for all the applications that the user has.
+            </p>
+         </div>
+         <br>
+         <button type="button" class="collapsible">STUDIES</button>
+         <div class="content">
+            <br>
+            <p>The second menu is studies. In the navigation studies section, the user can save the name of the
+               subject and the link of the note to make it easier for the user to review the notes when needed or to
+               review
+               the lesson.</p>
+         </div>
+         <br>
+         <button type="button" class="collapsible">EXPENSES</button>
+         <div class="content">
+            <br>
+            <p>Then is the expenses menu. In this section, users can record all daily expenses as well as total
+               expenses.
+               This can indirectly make it easier for users to plan their finances and review past expenses.</p>
+         </div>
+         <br>
+         <button type="button" class="collapsible">RECIPES</button>
+         <div class="content">
+            <br>
+            <p>The last menu is the recipes menu. In this section, users can review recipes that have been mentioned to
+               make it easier for users to cook foods that they do not know. The user can also see a picture of the food
+               if
+               the
+               user does not know the food. The method of preparation is also described in this section of the recipe.
+            </p>
+         </div>
+      </div>
+
+      <!-- divProfile no function yet-->
+      <div class="well" id="divProfile" style="overflow-x:auto;">
+         <div class="row">
+            <div class="col-sm-6">
+               <table class="table table-condensed table-stripped table-hover" id="tblProfile">
+                  <thead>
+                     <tr>
+                        <th>Email</th>
+                        <th>Password</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+      </div>
+
+      <!-- divNotes-->
+      <div class="well" id="divNotes" style="overflow-x:auto;">
+         <div class="row">
+            <div class="col-sm-12">
+               <a class="btn btn-primary" href="#btnAddNotes" role="button">Add Notes</a>
+               <p></p>
+               <table class="table table-condensed table-stripped table-hover" id="tblNotes">
+                  <thead>
+                     <tr>
+                        <th>Index</th>
+                        <th>Nickname</th>
+                        <th>Email</th>
+                        <th>Username</th>
+                        <th>Password</th>
+                        <th>Phone No.</th>
+                        <th>Added Date</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+      </div>
+
+      <!--div add notes form - div add notes-->
+      <div class="well" id="divAddNotes" style="overflow-x:auto;">
+         <div>
+            <form id="frmAddNotes" class="form-horizontal">
+               <fieldset>
+                  <legend>Enter Notes Details</legend>
+
+                  <label for="nickname">Nickname:</label>
+                  <input type="text" class="form-control" id="nickname" placeholder="Nickname" required />
+                  <br>
+                  <label for="email">Email:</label>
+                  <input type="text" class="form-control" id="email" placeholder="Email" required />
+                  <br>
+                  <label for="username">Username:</label>
+                  <input type="text" class="form-control" id="username" placeholder="Username" required />
+                  <br>
+                  <label for="password">Password:</label>
+                  <input type="text" class="form-control" id="password" placeholder="Password" required />
+                  <br>
+                  <label for="phone">Phone No:</label>
+                  <input type="text" class="form-control" id="phone" placeholder="Phone No" required />
+                  <br>
+                  <div class="form-group" style="text-align: center;">
+                     <button type="submit" class="btn btn-success">Save Notes</button>
+                     <button type="reset" class="btn btn-primary">Reset</button>
+                  </div>
+               </fieldset>
+            </form>
+         </div>
+      </div>
+
+      <!--div edit notes form - divEditNotes-->
+      <div class="well" id="divEditNotes" style="overflow-x:auto;">
+         <div>
+            <form id="frmEditNotes" class="form-horizontal">
+               <fieldset>
+                  <legend>Modify Notes Details</legend>
+
+                  <label for="nickname100">Nickname:</label>
+                  <input type="text" class="form-control" id="nickname100" placeholder="Enter your nickname" required />
+                  <br>
+                  <label for="emailadd100">Email Address:</label>
+                  <input type="email" class="form-control" id="emailadd100"
+                     placeholder="Enter your contact email address" required>
+                  <br>
+                  <label for="username100">Username:</label>
+                  <input type="text" class="form-control" id="username100" placeholder="Enter your username" required />
+                  <br>
+                  <label for="pass100">Password:</label>
+                  <input type="text" class="form-control" id="pass100" placeholder="Enter your password" required />
+                  <br>
+                  <label for="phoneno100">Phone No:</label>
+                  <input type="text" class="form-control" id="phoneno100" placeholder="Enter your phone number"
+                     required />
+                  <br>
+                  <div class="form-group" style="text-align: center;">
+                     <input type="hidden" id="notesid" />
+                     <button type="submit" class="btn btn-success">Update Notes</button>
+                     <button type="reset" class="btn btn-info">Reset</button>
+                  </div>
+               </fieldset>
+            </form>
+         </div>
+      </div>
+
+
+      <!-- divStudies-->
+      <div class="well" id="divStudies" style="overflow-x:auto;">
+         <div class="row">
+            <div class="col-sm-12">
+               <a class="btn btn-primary" href="#btnAddStudies" role="button">Add Studies</a>
+               <p></p>
+               <table class="table table-condensed table-stripped table-hover" id="tblStudies">
+                  <thead>
+                     <tr>
+                        <th>Index</th>
+                        <th>Subject</th>
+                        <th>Notes</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+      </div>
+
+      <!--div add notes studies form - div add stdies-->
+      <div class="well" id="divAddStudies" style="overflow-x:auto;">
+         <div>
+            <form id="frmAddStudies" class="form-horizontal">
+               <fieldset>
+                  <legend>Enter Studies Details</legend>
+
+                  <label for="subject">Subject Name:</label>
+                  <input type="text" class="form-control" id="subject" placeholder="Enter the subject name" required />
+                  <br>
+                  <label for="notes">Notes:</label>
+                  <textarea class="form-control" rows="3" id="notes" placeholder="Enter the link for the notes"
+                     required></textarea>
+                  <span class="help-block"></span>
+                  <br>
+                  <div class="form-group" style="text-align: center;">
+                     <button type="submit" class="btn btn-success">Save Studies</button>
+                     <button type="reset" class="btn btn-primary">Reset</button>
+                  </div>
+            </form>
+         </div>
+      </div>
+
+
+      <!--div edit studies form - divEditStudies-->
+      <div class="well" id="divEditStudies" style="overflow-x:auto;">
+         <div>
+            <form id="frmEditStudies" class="form-horizontal">
+               <fieldset>
+                  <legend>Modify Studies Details</legend>
+
+                  <label for="subject100">Subject Name:</label>
+                  <input type="text" class="form-control" id="subject100" placeholder="Enter the subject name" required />
+                  <br>
+                  <label for="notes100">Notes:</label>
+                  <textarea class="form-control" rows="3" id="notes100" placeholder="Enter the link for the notes"
+                     required></textarea>
+                  <span class="help-block"></span>
+                  <br>
+                  <div class="form-group" style="text-align: center;">
+                     <input type="hidden" id="studiesid" />
+                     <button type="submit" class="btn btn-success">Update Studies</button>
+                     <button type="reset" class="btn btn-info">Reset</button>
+                  </div>
+            </form>
+         </div>
+      </div>
+
+      <!-- divExpenses-->
+      <div class="well" id="divExpenses" style="overflow-x:auto;">
+         <div class="row">
+            <div class="col-sm-12">
+               <a class="btn btn-primary" href="#btnAddExpenses" role="button">Add Expenses</a>
+               <p></p>
+               <table class="table table-condensed table-stripped table-hover" id="tblExpenses">
+                  <thead>
+                     <tr>
+                        <th>Index</th>
+                        <th>Date</th>
+                        <th>Items & Price(RM)</th>
+                        <th>Total</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+      </div>
+
+      <!--div add expenses studies form - div add expenses-->
+      <div class="well" id="divAddExpenses" style="overflow-x:auto;">
+         <div>
+            <form id="frmAddExpenses" class="form-horizontal">
+
+               <fieldset>
+                  <legend>Enter Expenses</legend>
+
+                  <label for="date">Date:</label>
+                  <input type="date" class="form-control" id="date" placeholder="Enter the date" required />
+                  <br>
+                  <label for="itemsprice">Items & Price(RM):</label>
+                  <textarea type="text" class="form-control" id="itemsprice" placeholder="Eg. Ikan (RM3) Ayam (RM10)" required></textarea>
+                  <br>
+                  <label for="total">Total:</label>
+                  <input type="text" class="form-control" id="total" placeholder="Enter the total" required />
+                  <br>
+                  <div class="form-group" style="text-align: center;">
+                     <button type="submit" class="btn btn-success">Save</button>
+                     <button type="reset" class="btn btn-primary">Reset</button>
+                  </div>
+            </form>
+         </div>
+      </div>
+
+
+      <!--div edit expenses form - divEditExpensess-->
+      <div class="well" id="divEditExpenses" style="overflow-x:auto;">
+         <div>
+            <form id="frmEditExpenses" class="form-horizontal">
+               <fieldset>
+                  <legend>Modify Expenses</legend>
+
+                  <label for="date100">Date:</label>
+                  <input type="date" class="form-control" id="date100" placeholder="Enter the date" required />
+                  <br>
+                  <label for="itemsprice100">Items & Price(RM):</label>
+                  <textarea type="text" class="form-control" id="itemsprice100" placeholder="Eg. Ikan (RM3) Ayam (RM10)" required></textarea>
+                  <br>
+                  <label for="total100">Total:</label>
+                  <input type="text" class="form-control" id="total100" placeholder="Enter the total" required />
+                  <br>
+                  <div class="form-group" style="text-align: center;">
+                     <input type="hidden" id="expensesid" />
+                     <button type="submit" class="btn btn-success">Update Expenses</button>
+                     <button type="reset" class="btn btn-info">Reset</button>
+                  </div>
+            </form>
+         </div>
+      </div>
+
+      <!-- nav-->
+      <nav class="navbar navbar-default navbar-fixed-bottom">
+         <div class="container">
+            <!--div class="well"-->
+            <div class="row">
+               <div class="col-md-12">
+                  &copy; 555 Application
+               </div>
+            </div>
+         </div>
+   </div>
+   </div>
+   </nav>
+
+   <script src="js/jquery-3.2.1.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/signals.min.js"></script>
+   <script src="js/hasher.min.js"></script>
+   <script src="js/crossroads.min.js"></script>
+   <script src="js/bootbox.min.js"></script>
+   <script src="js/index.js"></script>
+   <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+         coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+               content.style.display = "none";
+            } else {
+               content.style.display = "block";
+            }
+         });
+      }
+   </script>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body{
+  background-image: url('../img/bg4.jpg'); 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.jumbotron{
+    background:rgb(143, 180, 214);
+    background-image: url('../img/bg2.jpg');
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.well {
+    background:rgb(143, 180, 214);
+    background-image: url('../img/bg2.jpg');
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+#divHome, #divHome1, #divHome2, #divHome3, #divHome4 {
+    background-color: rgb(241, 241, 241);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+
+}
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+
+.navbar-nav li a:hover {
+    color: #d4cd66 !important;
+}
+
+.about1 {
+    font-size: 16px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.collapsible {
+    background-color: rgb(255, 108, 108);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: rgb(255, 140, 140);
+  }
+  
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    background-image: url('../img/bg2.jpg');
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
