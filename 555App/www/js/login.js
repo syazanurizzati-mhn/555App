@@ -12,7 +12,7 @@ $(function(){
             var datalist = "inputEmail=" + email + "&inputPassword=" + pass;
             $.ajax({
                 type: "post",
-                url: "http://172.17.64.91:8080/FrontEnd/Login",
+                url: "http://172.17.64.91:8080/Group1_555/Login",
                 data: datalist,
                 cache: false,
                 success: function (mydata) {

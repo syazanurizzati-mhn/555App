@@ -130,7 +130,7 @@ $(function () {
         var datalist = "email=" + email;
         $.ajax({
             type: "post",
-            url: "http://172.17.64.91:8080/FrontEnd/GetProfileData",
+            url: "http://172.17.64.91:8080/Group1_555/GetProfileData",
             data: datalist,
             cache: false,
             success: function (mydata) {
@@ -177,7 +177,7 @@ $(function () {
         var datalist = "email=" + email;
         $.ajax({
             type: "post",
-            url: "http://172.17.64.91:8080/FrontEnd/GetNotesData",
+            url: "http://172.17.64.91:8080/Group1_555/GetNotesData",
             data: datalist,
             cache: false,
             success: function (mydata) {
@@ -240,7 +240,7 @@ $(function () {
         var datalist = "nickname=" + nickname + " &email=" + email + "&username=" + username + "&password=" + password + "&phone=" + phone + "&owneremail=" + sessionStorage.ttoken;
         $.ajax({
             type: "post",
-            url: "http://172.17.64.91:8080/FrontEnd/AddNotes",
+            url: "http://172.17.64.91:8080/Group1_555/AddNotes",
             data: datalist,
             cache: false,
             success: function (mydata) {
@@ -286,7 +286,7 @@ $(function () {
         var datalist = "nickname=" + nickname + " &email=" + email + "&username=" + username + "&password=" + password + "&phone=" + phone + "&notesid=" + notesid;
         $.ajax({
             type: "post",
-            url: "http://172.17.64.91:8080/FrontEnd/UpdateNotesDataById",
+            url: "http://172.17.64.91:8080/Group1_555/UpdateNotesDataById",
             data: datalist,
             cache: false,
             success: function (mydata) {
@@ -326,7 +326,7 @@ $(function () {
             if (answer) {
                 $.ajax({
                     type: "post",
-                    url: "http://172.17.64.91:8080/FrontEnd/DelNotesById",
+                    url: "http://172.17.64.91:8080/Group1_555/DelNotesById",
                     data: datalist,
                     cache: false,
                     success: function (mydata) {
@@ -357,7 +357,7 @@ $(function () {
             var datalist = "id=" + id;
             $.ajax({
                 type: "post",
-                url: "http://172.17.64.91:8080/FrontEnd/GetNotesDataById",
+                url: "http://172.17.64.91:8080/Group1_555/GetNotesDataById",
                 data: datalist,
                 cache: false,
                 success: function (mydata) {
@@ -405,7 +405,7 @@ $(function () {
         var datalist = "email=" + email;
         $.ajax({
             type: "post",
-            url: "http://172.17.64.91:8080/FrontEnd/GetStudiesData",
+            url: "http://172.17.64.91:8080/Group1_555/GetStudiesData",
             data: datalist,
             cache: false,
             success: function (mydata) {
@@ -461,7 +461,7 @@ $(function () {
         var datalist = "subject=" + subject + " &notes=" + notes + "&owneremail=" + sessionStorage.ttoken;
         $.ajax({
             type: "post",
-            url: "http://172.17.64.91:8080/FrontEnd/AddStudies",
+            url: "http://172.17.64.91:8080/Group1_555/AddStudies",
             data: datalist,
             cache: false,
             success: function (mydata) {
@@ -502,7 +502,7 @@ $(function () {
         var datalist = "subject=" + subject + " &notes=" + notes + "&studiesid=" + studiesid;
         $.ajax({
             type: "post",
-            url: "http://172.17.64.91:8080/FrontEnd/UpdateStudiesDataById",
+            url: "http://172.17.64.91:8080/Group1_555/UpdateStudiesDataById",
             data: datalist,
             cache: false,
             success: function (mydata) {
@@ -542,7 +542,7 @@ $(function () {
             if (answer) {
                 $.ajax({
                     type: "post",
-                    url: "http://172.17.64.91:8080/FrontEnd/DelStudiesById",
+                    url: "http://172.17.64.91:8080/Group1_555/DelStudiesById",
                     data: datalist,
                     cache: false,
                     success: function (mydata) {
@@ -573,7 +573,7 @@ $(function () {
             var datalist = "id=" + id;
             $.ajax({
                 type: "post",
-                url: "http://172.17.64.91:8080/FrontEnd/GetStudiesDataById",
+                url: "http://172.17.64.91:8080/Group1_555/GetStudiesDataById",
                 data: datalist,
                 cache: false,
                 success: function (mydata) {
@@ -618,7 +618,7 @@ $(function () {
         var datalist = "email=" + email;
         $.ajax({
             type: "post",
-            url: "http://172.17.64.91:8080/FrontEnd/GetExpensesData",
+            url: "http://172.17.64.91:8080/Group1_555/GetExpensesData",
             data: datalist,
             cache: false,
             success: function (mydata) {
@@ -675,7 +675,7 @@ $(function () {
         var datalist = "date=" + date + " &itemsprice=" + itemsprice + "&total=" + total + "&owneremail=" + sessionStorage.ttoken;
         $.ajax({
             type: "post",
-            url: "http://172.17.64.91:8080/FrontEnd/AddExpenses",
+            url: "http://172.17.64.91:8080/Group1_555/AddExpenses",
             data: datalist,
             cache: false,
             success: function (mydata) {
@@ -720,7 +720,7 @@ $(function () {
         var datalist = "date=" + date + " &itemsprice=" + itemsprice + "&total=" + total + "&expensesid=" + expensesid;
         $.ajax({
             type: "post",
-            url: "http://172.17.64.91:8080/FrontEnd/UpdateExpensesDataById",
+            url: "http://172.17.64.91:8080/Group1_555/UpdateExpensesDataById",
             data: datalist,
             cache: false,
             success: function (mydata) {
@@ -760,7 +760,7 @@ $(function () {
             if (answer) {
                 $.ajax({
                     type: "post",
-                    url: "http://172.17.64.91:8080/FrontEnd/DelExpensesById",
+                    url: "http://172.17.64.91:8080/Group1_555/DelExpensesById",
                     data: datalist,
                     cache: false,
                     success: function (mydata) {
@@ -791,7 +791,7 @@ $(function () {
             var datalist = "id=" + id;
             $.ajax({
                 type: "post",
-                url: "http://172.17.64.91:8080/FrontEnd/GetExpensesDataById",
+                url: "http://172.17.64.91:8080/Group1_555/GetExpensesDataById",
                 data: datalist,
                 cache: false,
                 success: function (mydata) {
